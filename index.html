@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Homeward Bound</title>
+    <title>SS Static</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,13 +16,39 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <p>Hello World! </p>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+
+
+    <!-- .contain vs .container 
+         - .container has padding
+         - .contain how no padding
+         - each center
+         - each contain
+         - edit their settings in assets-src/sass/core/_base.sass
+    -->
+
+    <div class="container">
+      <h1>Hello World!</h1>
+      <p>SS-Static is a starting point for purely static sites with no platform.</p>
+      <p><b>For development,</b> the root is set to the directory you cloned me into.</p>
+      <p><b>For deployment,</b> the root is set to one level up, in a directory named "SS-Static"</p>
+      <p>Customize and enjoy.</p>
+    </div>
+
+
+
+
+
+    <!-- jQuery 
+         - Think first, you might not need it (http://youmightnotneedjquery.com/)
+         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+     -->
+    <!-- Single, browserified bundle -->
     <script src="/assets/js/bundle.js"></script>
 
-    
+    <!-- Google Analytics - uncomment and replace UA-XXXXX-X with your code -->
+    <!--
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
         function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -31,5 +57,6 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X','auto');ga('send','pageview');
     </script>
+    -->
   </body>
 </html>

@@ -38,7 +38,7 @@ var del           = require('del')
 
 // Destination for shippable build
 // Can be anywhere, relative to current directory
-var dest_root = "./../PagesterTheme/"
+var dest_root = "./../SS-Static/"
 
 // Configuration here:
 var config = { 

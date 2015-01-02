@@ -21,6 +21,8 @@ $c-bg:      darken($c-white, 7)
 
 // Lobotomized Owl Selector - brilliant
 // http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
+// adjust accordingly
+// Note: margin-bottom might be a better approach
 .container * + *
   margin-top: $space--owl
 
@@ -30,6 +32,7 @@ html
 .contain 
   max-width: $width-contain
   margin: 0 auto
+  overflow: hidden
 .container
   @extend .contain 
   margin-left: auto
